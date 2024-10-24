@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body { 
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.png {
+	height: auto;
+	width: 320px;
+	margin-left: 70px;
+	margin-top: 80px;
+	float: left;
+
+}
+
+main {
+	height: 100vh;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: red;
+}
+
+.navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 25x 100px;
+	margin-top: 6px;
+	margin-left: 1070px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar ul li {
+	position: relative;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.navbar ul li::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: red;
+	transform: scale(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+
+.navbar ul li:hover::after {
+	transform: scale(1);
+	transform-origin: left;
+
+}
+
+.navbar ul li a {
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.content button {
+	width: 200px;
+	padding: 15px 0;
+	margin: 20px 10px;
+	margin-left: 70px;
+	margin-top: 65px;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 3px solid #fff; /* Set border color */
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.content button:hover {
+	background: #fff; /* Change background color on hover */
+	color: #000; /* Change text color on hover */
+	border: 3px solid #000; /* Change border color on hover */
+}

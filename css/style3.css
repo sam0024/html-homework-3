@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body { 
+	background-image: url(../images/redbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main {
+	height: 100vh;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 25x 100px;
+	margin-top: 6px;
+	margin-left: 1070px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar ul li {
+	position: relative;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.navbar ul li::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: white;
+	transform: scale(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+
+.navbar ul li:hover::after {
+	transform: scale(1);
+	transform-origin: left;
+
+}
+
+.navbar ul li a {
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.container {
+	min-height: 100vh;
+	background: black;
+	background: url(../images/redbg.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container form {
+	width: 670px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	flex-wrap: wrap;
+}
+
+.container form h1 {
+	color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input {
+	width: 290px;
+	height: 40px;
+	padding-left: 10px;
+	outline: none;
+	border: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	background: none;
+	border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder {
+	color: #ddd;
+}
+
+.container form #lastName,
+.container form #mobile {
+	margin-left: 20px;
+}
+
+.container form h4 {
+	color: #fff;
+	font-weight: 300;
+	width: 600px;
+	margin-top: 20px;
+}
+
+.container form textarea {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-weight: 200;
+	font-size: 15px;
+	padding: 10px;
+	outline: none;
+	min-width: 600px;
+	max-width: 600px;
+	min-height: 80px;
+	max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+	width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(194, 194, 194, 0.713);
+}
+
+.container form #button {
+	border: none;
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #333;
+	width: 100px;
+	padding: 0;
+	margin-right: 500px;
+	margin-bottom: 30px;
+	transition: 0.3s;
+}
+
+.container form #button:hover {
+	opacity: 0.7;
+}
